@@ -1,6 +1,10 @@
 ## Overview
 This document outlines the key responsibilities and checks to be performed before starting with CTT tool.
 
+---ctt.env
+Update the paths, paysys & currency in ctt.env file 
+Update paysys & currency details in sh file
+
 ---
 
 ## 📄 Nocks Sheet
