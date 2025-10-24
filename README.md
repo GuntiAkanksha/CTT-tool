@@ -20,7 +20,7 @@ Ensure that all required nocks mentioned in the design document are getting call
 
 ---
 
-## 🔗 API Chaining Sheet
+## 📄  API Chaining Sheet
 
 ### 🔸 Mocks
 
@@ -50,14 +50,14 @@ Ensure that all required nocks mentioned in the design document are getting call
 
 ---
 
-### 🔸 Generated Combinations Sheet
+## 📄  Generated Combinations Sheet
 
 #### Checks:
 1. Verify that **all assertions** in Genrated Combinations are correctly mapped with template names present in API Chaining sheet.
 
 ---
 
-### 🔸 Test Config
+## 📄  Test Config
 
 #### Checks:
 1. Ensure that all paths for parameters used in **Generated Combinations** are properly defined here.
@@ -68,6 +68,7 @@ Ensure that all required nocks mentioned in the design document are getting call
 ## 🧱 Note
 - Maintain consistent naming conventions across mocks, templates, and config sheets.
 - An extra unncessary space can cause some isssues.
+- When you are working on CTs outside node_modules -  Use replace.js(test/componentTest/replace.js) to replace CMNCT to respective PAYSYS & replace HKD to respective CRNCY.
 
 ---
 
