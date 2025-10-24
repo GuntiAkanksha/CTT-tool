@@ -1,20 +1,22 @@
 ## Overview
+
 This document outlines the key responsibilities and checks to be performed before starting with CTT tool.
 
 ---ctt.env
+
 Update the paths, paysys & currency in ctt.env file 
+
 Update paysys & currency details in sh file
 
 ---
 
 ## 📄 Nocks Sheet
-🧩 What is a Nock
+🧩 What is a Nock?
+
 It Mocks HTTP requests (external APIs). Intercepts HTTP calls and returns predefined responses without actually hitting the real API.
 
 Ensure that all required nocks mentioned in the design document are getting called.
 
-### Checklist:
-- ✅ Verify that **all required nocks** are mentioned in the nocks sheet of design document.
 
 ---
 
@@ -23,10 +25,8 @@ Ensure that all required nocks mentioned in the design document are getting call
 ### 🔸 Mocks
 
 #### Checks:
-1. Ensure **all mocks** mentioned in the design document are present in the respective files below:
-   - `outbound.json`
-   - `inbound.json`
-   - `suspense.json`
+1. Ensure **all mocks** mentioned in the design document are present in the mocks folder(test/cttTestSuite/payments_workspace/py/mocks)
+   - (outbound.json/inbound.json..)
 2. Confirm that each mock contains the **exact required data**.  
    - If not, create a **new mock** by copying an existing one and modify the necessary fields.
    - Pass the new mock name in the design document.
@@ -36,24 +36,24 @@ Ensure that all required nocks mentioned in the design document are getting call
      ```
      #COMBO.X
      ```
-   - Define the corresponding `X` value in the **Generated Combinations** sheet.
+   - pass the `X` parameter as column the **Generated Combinations** sheet & provide the param path in TestConfig file.
 
 ---
 
 ### 🔸 Patterns
 
 #### Checks:
-1. Ensure all required **template files** are present in the `templates` folder.
+1. Ensure all **template files** are present in the `templates` folder.
 2. Validate that the **template content** matches the expected structure and data.
 3. If no existing template matches the required format, **create a new template file** with the appropriate structure.
-4. When you want to pass input to template use 'Input' column.
+4. When you want to pass input dynamically to template use 'Input' column.
 
 ---
 
 ### 🔸 Generated Combinations Sheet
 
 #### Checks:
-1. Verify that **all assertions** are correctly defined and aligned with expected outcomes.
+1. Verify that **all assertions** in Genrated Combinations are correctly mapped with template names present in API Chaining sheet.
 
 ---
 
@@ -65,7 +65,7 @@ Ensure that all required nocks mentioned in the design document are getting call
 
 ---
 
-## 🧱 Notes
+## 🧱 Note
 - Maintain consistent naming conventions across mocks, templates, and config sheets.
 - An extra unncessary space can cause some isssues.
 
